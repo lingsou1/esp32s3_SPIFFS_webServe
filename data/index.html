@@ -1,0 +1,33 @@
+<!-- 这是一个html代码,可以通过这个代码在网页上显示一些自己的东西 -->
+<!-- 他的小图标我还没解决,应该是和 favicon.ico 文件有关的,我也改了相关的HTML代码了,但是不知道为什么就是不行 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!--下面一句话应该是来设置页面小图标的,但是好像没用-->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- <link rel="stylesheet" type="text/css" href="main.css"> -->
+    <!-- 下面的一句内容可以在网页上方的那一栏显示出需要显示的内容 -->
+    <title>灵首的学习展示</title>
+    <script type="text/javascript" src="clock.js"></script>
+</head>
+<body>
+	<center>
+    <!-- 下面的语句会在网页上显示一张图片<img src="/img/lingsou.jpg" alt="灵首">,同时点击图片还会跳转到相关的网页去(href="https://www.bilibili.com")  -->
+    <a href="https://www.bilibili.com" target="_black"><img src="/img/lingsou.jpg" alt="灵首"></a>
+    <a href="https://www.bilibili.com" target="_black"><img src="/favicon.ico" alt="灵首"></a>
+    <h1>灵首的学习展示:</h1>
+    <p>基于太极创客的esp32s3_SPIFFS_webServe</p>
+    <h1>在这里面写的东西可以在网页上显示出来</h1>
+    <p>并且前面和后面的的"p../p  h1../h1"的意思是控制字体大小的</p>
+    <p>同时如果需要在纯文本中添加网址的话可以如下来操作 <a href="https://www.bilibili.com/" target="_black">www.bilibili.com</a> .
+    <!-- 可以在 href 中写出自己需要跳转的网址,再在后面加上需要在网页上显示的内容,就可以点击网页上显示的内容时跳转到指定的网页了 -->
+    <p class="red">创建页面时可以使用css。这里的字体是红色，原因是使用了css。</p>
+    <!--显示时钟-->
+	<h3>页面支持JavaScript，以下时钟/日期使用JavaScript实现。</h3>
+    <h1 id="date"></h1>
+    <span id="msg" style="font-size: 30px;background-color: greenyellow;"></span>
+	</center>
+</body>
+</html>
+
